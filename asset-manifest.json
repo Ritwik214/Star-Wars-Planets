@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Star-Wars-Planets/static/css/main.079f1401.css",
+    "main.js": "/Star-Wars-Planets/static/js/main.b489e489.js",
+    "static/js/453.0dc32eef.chunk.js": "/Star-Wars-Planets/static/js/453.0dc32eef.chunk.js",
+    "index.html": "/Star-Wars-Planets/index.html",
+    "main.079f1401.css.map": "/Star-Wars-Planets/static/css/main.079f1401.css.map",
+    "main.b489e489.js.map": "/Star-Wars-Planets/static/js/main.b489e489.js.map",
+    "453.0dc32eef.chunk.js.map": "/Star-Wars-Planets/static/js/453.0dc32eef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.079f1401.css",
+    "static/js/main.b489e489.js"
+  ]
+}
