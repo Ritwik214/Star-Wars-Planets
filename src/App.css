@@ -1,0 +1,122 @@
+/* src/App.css */
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+  background: linear-gradient(45deg, #282c34, #d14f76, #dc61fb, #42e0be, #282c34);
+  animation: sparkling 3s infinite;
+}
+
+.App {
+  position: relative;
+  height: 100vh;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: linear-gradient(45deg, #282c34, #d14f76, #dc61fb, #42e0be, #282c34);
+  color: #f3f035;
+  animation: sparkling 3s infinite, floating-ribbons 3s infinite;
+}
+
+@keyframes sparkling {
+  0% {
+    background-size: 100% 100%;
+    filter: brightness(100%);
+  }
+  50% {
+    background-size: 150% 150%;
+    filter: brightness(100%);
+  }
+  100% {
+    background-size: 100% 100%;
+    filter: brightness(100%);
+  }
+}
+
+@keyframes floating-ribbons {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.intro-text {
+  font-size: 3em;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.planet-small-cards {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px; /* Adjust the width as needed */
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow:auto; /* Hide the scrollbar */
+}
+.planet-small-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.planet-small-cards {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.small-planet-card {
+  flex: 0 0 auto;
+  width: calc((300px - 40px) / 3); /* Adjust the width calculation as needed */
+  height: 150px;
+  padding: 20px;
+  background: linear-gradient(45deg, #d14fcb, #61fba6, #d1ae4f);
+  color: rgb(224, 38, 38);
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.3s, opacity 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.small-planet-card:hover {
+  background: linear-gradient(45deg, #4be46c, #80a2ff, #eb3d94);
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.small-planet-card:active {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+
+/* Animations */
+@keyframes slideIn {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

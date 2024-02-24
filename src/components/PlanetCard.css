@@ -1,0 +1,19 @@
+/* PlanetCard.css */
+.planet-details {
+  position: fixed;
+  top: 50%;
+  right: 40%;
+  padding: 20px;
+  background-color: #dd6d6d80;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  z-index: 999;
+  transform: translateY(-50%);
+}
+
+.resident-container {
+  max-height: 200px;
+  overflow-y: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
